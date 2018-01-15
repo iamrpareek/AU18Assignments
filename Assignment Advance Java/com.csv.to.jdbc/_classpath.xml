@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="com.csv.to.jdbc/src"/>
+	<classpathentry kind="lib" path="com.csv.to.jdbc/lib/common-lang3.jar"/>
+	<classpathentry kind="lib" path="com.csv.to.jdbc/lib/javacsv.jar"/>
+	<classpathentry kind="lib" path="com.csv.to.jdbc/lib/opencsv-2.2.jar"/>
+	<classpathentry kind="output" path="com.csv.to.jdbc/bin"/>
+</classpath>
