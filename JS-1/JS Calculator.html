@@ -1,0 +1,163 @@
+<html>
+<head>
+<script type="text/javascript">
+function Calculate(i){
+calculator.text.value+=i;
+calculator.text1.value = eval(calculator.text.value);
+}
+function Calculate1(i){
+calculator.text.value=calculator.text1.value;
+calculator.text.value+=i;
+}
+
+function result(){
+calculator.text.value= calculator.text1.value;
+}
+</script>
+
+<style>
+ body
+{
+background-color:tan;
+} 
+.box
+{
+background-color:#3d4543;
+height:300px;
+width:250px;
+border-radius:10px;
+position:relative;
+top:80px;
+left:40%;
+} 
+.display
+{
+background-color:#222;
+width:220px;
+position:relative;
+left:15px;
+top:20px;
+height:40px;
+}
+.display input
+{
+position:relative;
+left:2px;
+top:2px;
+height:35px;
+color:black;
+background-color:#bccd95;
+font-size:21px;
+
+} 
+.keys
+{
+position:relative;
+top:15px;
+}
+.button
+{
+width:40px;
+height:30px;
+border:none;
+border-radius:8px;
+margin-left:17px;
+cursor:pointer;
+border-top:2px solid transparent;
+}
+.button.gray
+{
+color:white;
+background-color:#6f6f6f;
+border-bottom:black 2px solid;
+border-top:2px #6f6f6f solid;
+}
+.button.pink
+{
+color:black;
+background-color:#ff4561;
+border-bottom:black 2px solid;
+}
+.button.black
+{
+color:white;
+background-color:303030;
+border-bottom:black 2px solid;
+border-top:2px 303030 solid;
+}
+.button.orange
+{
+color:black;
+background-color:FF9933;
+border-bottom:black 2px solid;
+border-top:2px FF9933 solid;
+}
+.gray:active
+{
+border-top:black 2px solid;
+border-bottom:2px #6f6f6f solid;
+}
+.pink:active
+{
+border-top:black 2px solid;
+border-bottom:#ff4561 2px solid;
+}
+.black:active
+{
+border-top:black 2px solid;
+border-bottom:#303030 2px solid;
+}
+.orange:active
+{
+border-top:black 2px solid;
+border-bottom:FF9933 2px solid;
+}
+p
+{
+line-height:10px;
+}
+
+</style>
+</head>
+<body>
+<div class="box">
+
+<div class="keys">
+<br>
+<form name="calculator">
+<div>
+
+<input type="text" name="text1" size="30">
+<br><br>
+<input type="text" name="text" size="30">
+
+</div>
+<br>
+<input type="button" value="1" class="button black" onclick="Calculate('1')">
+<input type="button" value="2" class="button black" onclick="Calculate('2') ">
+<input type="button" value="3" class="button black" onclick="Calculate('3')">
+<input type="button" value="+" class="button pink" onclick="Calculate1('+')">
+<br>
+<br>
+<input type="button" value="4" class="button black" onclick="Calculate('4')">
+<input type="button" value="5" class="button black" onclick="Calculate('5')">
+<input type="button" value="6" class="button black" onclick="Calculate('6')">
+<input type="button" value="-" class="button pink" onclick="Calculate1('-')">
+<br>
+<br>
+<input type="button" value="7" class="button black" onclick="Calculate('7')">
+<input type="button" value="8" class="button black" onclick="Calculate('8')">
+<input type="button" value="9" class="button black" onclick="Calculate('9')">
+<input type="button" value="*" class="button pink" onclick="Calculate1('*')">
+<br>
+<br>
+<input type="button" value="c" class="button black" onclick="calculator.text.value = ''">
+<input type="button" value="0" class="button black" onclick="Calculate('0')">
+<input type="button" value="=" class="button black" onclick="result()">
+<input type="button" value="/" class="button pink" onclick="Calculate1('/')">
+<br>
+</form>
+</div>
+</div>
+</body>
+</html>

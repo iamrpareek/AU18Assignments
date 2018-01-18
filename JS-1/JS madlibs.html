@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <style>
+		html,
+		body,
+		div {
+		  margin: 0;
+		  padding: 0;
+		  border: 0;
+		  font: inherit;
+		  font-size: 100%;
+		  vertical-align: baseline;
+		}
+
+		body {
+		  background: #edeff0;
+		  padding: 50px 0 0;
+		  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		  font-size: 62.5%;
+		}
+
+		h1{
+		  font-size: 2.4em;
+		  font-weight: 400;
+		  margin-bottom: 8px;
+		  playeror: #384047;
+		  line-height: 1.2;
+		}
+
+		p {
+		  playeror: #8d9aa5;
+		  font-size: 1.4em;
+		  margin-bottom: 15px;
+		  line-height: 1.4;
+		}
+
+		.container {
+		  box-sizing: border-box;
+		  width: 90%;
+		  max-width: 1080px;
+		  background: white;
+		  padding: 30px 15px;
+		  margin: 0 auto;
+		  position: relative;
+		  overflow: hidden;
+		  border-radius: 5px;
+		  -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+		  -moz-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+		  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+		}
+  </style>
+  
+  <title>Mad-Libs</title>
+ </head>
+<body>
+  <div class="container">
+  <h1>Mad-Libs</h1>
+
+  <script>
+	var noun1 = prompt('Input noun: ');
+	var pluNoun = prompt('Input a plural noun now: ');
+	var noun2 = prompt('Input another noun: ');
+	var noun3 = prompt('Input one last noun: ');
+	var place = prompt('Input a place: ');
+	var adj = prompt('Input adjective: ');
+	var col = prompt('Tell me your favorite color: ');
+	alert('All done. Ready for the message?');
+ 
+	var sentence = "Be kind to your noun1 - footed pluNoun <br> For a duck may be somebody`s noun2 , <br> Be kind to your pluNoun in place <br> Where the weather is always adj . <br> You may think that this is the noun3 , <br> Well it is.";
+ 
+	noun1="<span style='"+"color:"+col+";'>"+noun1 +"</span>";
+	noun2="<span style='"+"color:"+col+";'>"+noun2 +"</span>";
+	noun3="<span style='"+"color:"+col+";'>"+noun3 +"</span>";
+	place="<span style='"+"color:"+col+";'>"+place +"</span>";
+	adj="<span style='"+"color:"+col+";'>"+adj +"</span>";
+	pluNoun="<span style='"+"color:"+col+";'>"+pluNoun +"</span>";
+
+	sentence = sentence.replace(/\badj\b/g,adj);
+	sentence = sentence.replace(/\bnoun1\b/g,noun1);
+	sentence = sentence.replace(/\bnoun2\b/g,noun2);
+	sentence = sentence.replace(/\bnoun3\b/g,noun3);
+	sentence = sentence.replace(/\bpluNoun\b/g,pluNoun);
+	sentence = sentence.replace(/\bplace\b/g,place);
+	document.write(sentence);
+</script>
+</div>
+</body>
+</html>
