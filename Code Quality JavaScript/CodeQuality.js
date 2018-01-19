@@ -50,7 +50,7 @@ function analyzeString() {
 		}	
 		if(flag==1){
 		var table = document.getElementById("displayTable");
-		var row="<td>" + input + "</td><td>" + gender + "</td><td>" + age + "</td>";
+		var row="<td>" + input + "</td><td>" + gender + "</td><td>" + age + "</td><td>" + str + "</td>";
 		var tbody = document.querySelector("#displayTable tbody");
 		var tr = document.createElement("tr");
 		tr.innerHTML = row;
