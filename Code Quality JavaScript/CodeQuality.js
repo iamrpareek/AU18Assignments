@@ -1,9 +1,9 @@
 // Function description:
 // input: number or string
 // functionality:
-// -input is taken and if it is empty error is printed
-// -if input is a string, then a statement is printed stating the name.
-// -if input is a number, then it is sent to analyzeNumber where it checks its value, giving the description of the number
+// -using the checkbox we toggle between the number and name divisions.
+// -if number is selected, then it is sent to analyzeNumber where it checks its value, giving the description (range, to be specific) of the number
+// -if number is not selected, then UI asks for gender, name and age. After validation, it adds the data to the table.
 
 function analyzeNumber() {
 	var input = document.getElementById('inpNo').value;
