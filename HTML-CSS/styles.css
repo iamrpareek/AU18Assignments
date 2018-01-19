@@ -1,0 +1,120 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat';
+}
+img {
+	border-radius: 50%;
+}
+.header {	background-color: #2f3a3e;
+	color:white;
+	display:inline-flex;
+	margin-bottom:20px;
+	font-family: 'Raleway';
+}
+.header h4{
+	font-weight: 300;
+}
+.profImage{
+	height: 100%;	margin: 40px 0 40px 90px;
+}
+.profImage img{
+	width: 180px;
+}
+.heading {
+	margin:65px;
+}
+.general {
+	width:30%;
+}
+.work-related {
+	width:50%;
+}
+.main-body {
+	display:inline-flex;
+}
+.skills img {
+	width: 50px;
+	height: 50px;
+}
+.skills div {
+	display:inline-flex;
+}
+.contact h3{
+	background: #f8991b;
+	width: 80%;
+	padding: 10px 20px;
+	color: white;
+}
+.address{
+	padding-left: 20px;
+	color: #81c242;
+}
+.dob{
+	padding-left: 20px;
+	color: #f1585a;
+}.phone{	padding-left: 20px;	color: #f7991d;}
+.mail{
+	padding-left: 20px;
+	color: #36FFD4;}
+.web{
+	padding-left: 20px;
+	color: #81c242;
+}
+.contact p{
+	margin-top: -18px;
+	margin-bottom: 25px;
+	padding-left: 20px;
+}
+.about-me h3{
+	background: #f1585a;
+	width: 80%;
+	padding: 10px 20px;
+	color: white;
+}
+.about-me p{
+	padding: 0 60px 0 20px;	font-weight: 300;}
+.hobbies h3{
+	background: #81c242;
+	width: 80%;
+	padding: 10px 20px;
+	color: white;
+}
+.work-experience h3{
+	background: #81c242;
+	width: 80%;
+	padding: 10px 20px;
+	color: white;
+}
+.year{
+	float: left;
+	clear: left;
+	font-weight: bold;
+	padding: 10px 20px;
+}
+.year_lorem{
+	float: left;
+	padding: 10px;
+}
+.skills{
+	clear: both;
+	margin-top: 20px;
+}
+.skills h3{
+	background: #82cee5;
+	width: 80%;
+	padding: 10px 20px;
+	color: white;
+}
+.language h3{
+	background: #f7991d;
+	width: 80%;
+	padding: 10px 20px;
+	color: white;
+}
+.education h3{
+	background: #f1585a;
+	width: 80%;
+	padding: 10px 20px;
+	color: white;
+}
