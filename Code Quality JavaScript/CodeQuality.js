@@ -19,23 +19,44 @@ function analyzeNumber() {
 
 function analyzeString() {
 	var input = document.getElementById('inpName').value;
-	var str="The name is ";
-	var gender="";
-	if (document.getElementById("male").checked == true){
-		gender="Male";
-		str+="Mister "+input;
-	}		
-	else {
-		str += "Miss " + input;
-		gender="Female";
+	var flag=1;
+	var age = document.getElementById('inpAge').value;
+	if(input=="" || !isNaN(input)) {
+		//alert('Input Name');
+		document.getElementById('para').innerText = "Input name";
+		flag=0;
 	}
-	var table = document.getElementById("displayTable");
-	document.getElementById('para').innerText = str;
-	var row="<td>" + input + "</td><td>" + gender + "</td><td>" + document.getElementById('inpAge').value + "</td>";
-	var tbody = document.querySelector("#displayTable tbody");
-    var tr = document.createElement("tr");
-    tr.innerHTML = row;
-    tbody.appendChild(tr);
+	else {
+		var str="The name is ";
+		var gender="";
+		
+		if (document.getElementById("male").checked == true){
+			gender="Male";
+			str+="Mister "+input;
+			document.getElementById('para').innerText = str;
+		}		
+		else if (document.getElementById("female").checked == true){
+			str += "Miss " + input;
+			gender="Female";
+			document.getElementById('para').innerText = str;
+		}
+		else {
+			document.getElementById('para').innerText = "Select gender";
+			flag=0;
+		}
+		if(age=="") {
+			flag=0;
+			document.getElementById('para').innerText = "Input age";
+		}	
+		if(flag==1){
+		var table = document.getElementById("displayTable");
+		var row="<td>" + input + "</td><td>" + gender + "</td><td>" + age + "</td>";
+		var tbody = document.querySelector("#displayTable tbody");
+		var tr = document.createElement("tr");
+		tr.innerHTML = row;
+		tbody.appendChild(tr);
+		}
+	}
 }
 
 function analyze(){
