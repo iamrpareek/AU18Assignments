@@ -6,6 +6,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class ExServiceThreadPool {
+	static Logger logger = Logger.getLogger( ProducerConsumer.class.getName() );
 	final BlockingQueue<Integer> queue = null;
 	ExecutorService executor = Executors.newFixedThreadPool(2);
 
@@ -21,7 +22,7 @@ public class ExServiceThreadPool {
 			Thread.currentThread().interrupt();
 			Logger.getLogger(ExServiceThreadPool.class.getName()).log(Level.SEVERE, null, ex);
 		}
-		System.out.println("Finished");
+		logger.log(Level.INFO,"Finished");
 	}
 
 }
